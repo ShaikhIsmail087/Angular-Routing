@@ -1,0 +1,37 @@
+<h1>Angular Routing And Module</h1>
+<ul>
+    <li><a routerLink="login">Login</a></li>
+    <li><a routerLink="signup">Sign Up</a></li>
+</ul>
+<router-outlet></router-outlet>
+
+<h1>Angular Routing</h1>
+<a routerLink="home">Home</a>
+<br>
+<a routerLink="about">About</a>
+<br>
+<a routerLink="user">User</a>
+
+<br><br>
+<a routerLink="user/20">Anil</a>
+<br>
+<a routerLink="user/30">Sam</a>
+<br>
+<a routerLink="user/40">Bhasker</a>
+
+<router-outlet></router-outlet>
+
+<h1>Service in Angular</h1>
+<ul>
+    <li *ngFor="let data of memberData">
+        {{data.name}}
+    </li>
+</ul>
+
+<app-footer></app-footer>
+<h1>from API Get</h1>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.email}}
+    </li>
+</ul>
